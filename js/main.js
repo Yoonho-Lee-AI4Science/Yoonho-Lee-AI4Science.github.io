@@ -64,7 +64,8 @@
       if (p.year !== lastYear) { html += `<h3 class="year">${esc(p.year)}</h3>`; lastYear = p.year; }
       const links = Object.entries(p.links || {})
         .map(([k, v]) => `<a class="pill" href="${esc(v)}">${LINK_LABELS[k] || esc(k)}</a>`).join("");
-      const badges = (p.badges || []).map((b) => `<span class="badge">${esc(b)}</span>`).join("");
+      const badges = ((p.topics || []).includes("workshop") ? '<span class="ws-tag">Workshop</span>' : "") +
+        (p.badges || []).map((b) => `<span class="badge">${esc(b)}</span>`).join("");
       const thumb = p.image
         ? `<div class="thumb"><img src="${esc(p.image)}" alt="" loading="lazy" onerror="this.parentElement.classList.add('empty');this.remove()"></div>`
         : `<div class="thumb empty"></div>`;

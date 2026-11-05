@@ -144,6 +144,11 @@ h2 {
   font: 700 0.72rem var(--font-ui); letter-spacing: .02em; text-transform: uppercase;
   color: var(--badge); border: 1px solid currentColor; border-radius: 4px; padding: 1px 6px;
 }
+.ws-tag {
+  font: 600 0.72rem var(--font-ui); color: var(--muted);
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px;
+}
+.sub { font-size: 0.9rem; color: var(--muted); }
 .paper-tldr { font-size: 0.92rem; margin-top: 6px; }
 .paper-links { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
 .pill {
