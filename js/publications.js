@@ -87,7 +87,7 @@ const PUBLICATIONS = [
 
   // ======================= Workshops =======================
   {
-    title: "scTrilemma: Balancing Identity, Invariance, and Expression in Single-Cell Representation Learning",
+    title: "scTrilemma: Balancing Identity, Invariance, and Fidelity in Single-Cell Representation Learning",
     authors: "Yunhak Oh, Yoonho Lee, Junseok Lee, Namkyeong Lee, Sangyeon Hwang, Yinhua Piao, Hyomin Kim, Seonghwan Kim, Jaechang Lim, Wooyoun Kim, Sungsoo Ahn, Chanyoung Park",
     venue: "NeurIPS 2026 Workshop on GenAI for Health",
     year: 2026,
