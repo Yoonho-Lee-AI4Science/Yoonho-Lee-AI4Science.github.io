@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yoonho Lee</title>
+  <meta name="description" content="Yoonho Lee — AI for Science researcher at KAIST.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">Yoonho Lee</a>
+      <ul>
+        <li><a href="#news">News</a></li>
+        <li><a href="#pub">Publications</a></li>
+        <li><a href="#edu">Education</a></li>
+        <li><a href="#exp">Experience</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="blog/">Blog</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </nav>
+
+  <main class="container" id="top">
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about">
+      <img class="portrait" src="img/profile.jpg" alt="Portrait of Yoonho Lee"
+           onerror="this.src='img/profile-placeholder.svg'">
+      <div class="about-text">
+        <h1>Yoonho Lee <span class="name-ko">이윤호</span></h1>
+        <p class="tagline">Ph.D. Student · KAIST <!-- TODO: 직함/소속 수정 --></p>
+
+        <!-- TODO: 아래 소개글을 본인 내용으로 바꾸세요 -->
+        <p>
+          Welcome! I am a Ph.D. student at <a href="https://www.kaist.ac.kr/"><strong>KAIST</strong></a>,
+          advised by <a href="#"><strong>Prof. Advisor Name</strong></a>.
+          My research lies at the intersection of machine learning and the natural sciences
+          (<strong>AI for Science</strong>), with a focus on <em>topic A</em>, <em>topic B</em>, and <em>topic C</em>.
+        </p>
+        <p>
+          Previously, I received my B.S. from <a href="#">University Name</a>.
+          I am always happy to chat about research — feel free to reach out!
+        </p>
+
+        <ul class="social">
+          <li><a href="mailto:sml0399benbm@kaist.ac.kr" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="https://scholar.google.com/citations?user=TODO" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+          <li><a href="https://github.com/Yoonho-Lee-AI4Science" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/TODO" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://x.com/TODO" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="https://orcid.org/TODO" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+          <li><a href="files/CV.pdf" title="CV"><i class="ai ai-cv"></i></a></li>
+        </ul>
+        <p class="meta">
+          <i class="fa-solid fa-envelope"></i> sml0399benbm [at] kaist [dot] ac [dot] kr &nbsp;·&nbsp;
+          <i class="fa-solid fa-location-dot"></i> Daejeon, Republic of Korea
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== NEWS ===================== -->
+    <!-- 최신 소식을 맨 위에 추가하세요. 처음 6개만 보이고 나머지는 "Show more"로 펼쳐집니다. -->
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news collapsible" data-visible="6">
+        <li><span class="date">2026.11</span> Launched my new homepage! 🎉</li>
+        <li><span class="date">2026.09</span> One paper is accepted by <strong>NeurIPS 2026</strong>. <!-- TODO: 예시 --></li>
+        <li><span class="date">2026.05</span> One paper is accepted by <strong>ICML 2026</strong>. <!-- TODO: 예시 --></li>
+      </ul>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <!-- 논문 목록은 js/publications.js 에서 편집합니다. -->
+    <section id="pub">
+      <h2>Publications</h2>
+      <p class="note">* equal contribution &nbsp; † corresponding author &nbsp;·&nbsp;
+        See also <a href="https://scholar.google.com/citations?user=TODO">Google Scholar</a>.</p>
+      <div class="filters" id="pubFilters" role="tablist"></div>
+      <div id="pubList"></div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="edu">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <img class="logo" src="img/logos/kaist.png" alt="" onerror="this.remove()">
+          <div>
+            <div class="row"><strong>KAIST</strong><span class="when">20XX – Present</span></div>
+            <div>Ph.D. in TODO Department · Advisor: Prof. TODO</div>
+          </div>
+        </li>
+        <li>
+          <img class="logo" src="img/logos/undergrad.png" alt="" onerror="this.remove()">
+          <div>
+            <div class="row"><strong>TODO University</strong><span class="when">20XX – 20XX</span></div>
+            <div>B.S. in TODO</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="exp">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <div>
+            <div class="row"><strong>Research Intern, TODO Company/Lab</strong><span class="when">20XX.XX – 20XX.XX</span></div>
+            <div>Worked on TODO. Mentor: TODO.</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== AWARDS (optional) ===================== -->
+    <section id="awards">
+      <h2>Honors &amp; Awards</h2>
+      <ul class="plain">
+        <li><span class="date">20XX</span> TODO Scholarship / Award</li>
+      </ul>
+    </section>
+
+    <!-- ===================== SERVICE ===================== -->
+    <section id="service">
+      <h2>Academic Service</h2>
+      <ul class="plain">
+        <li><strong>Conference Reviewer:</strong> NeurIPS, ICML, ICLR <!-- TODO --></li>
+        <li><strong>Journal Reviewer:</strong> TODO</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Yoonho Lee · Last updated 2026.11
+  </footer>
+
+  <script src="js/publications.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
