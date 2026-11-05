@@ -1,3 +1,6 @@
+---
+# 이 front matter가 있어야 GitHub Pages(Jekyll)가 아래 {{ site.time }}을 빌드 시각으로 바꿔줍니다.
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +69,8 @@
         </ul>
         <p class="meta">
           <i class="fa-solid fa-envelope"></i> sml0399benbm [at] kaist [dot] ac [dot] kr &nbsp;·&nbsp;
-          <i class="fa-solid fa-location-dot"></i> Daejeon, Republic of Korea
+          <i class="fa-solid fa-location-dot"></i> Daejeon, Republic of Korea &nbsp;·&nbsp;
+          <i class="fa-solid fa-clock-rotate-left"></i> Last updated: {{ site.time | date: "%Y.%m.%d" }}
         </p>
       </div>
     </section>
@@ -167,7 +171,7 @@
   </main>
 
   <footer>
-    © <span id="year"></span> Yoonho Lee · Last updated 2026.11
+    © <span id="year"></span> Yoonho Lee · Last updated {{ site.time | date: "%Y.%m.%d" }}
   </footer>
 
   <script src="js/publications.js"></script>

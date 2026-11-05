@@ -3,6 +3,7 @@ title: Yoonho Lee
 description: Yoonho Lee — AI for Science researcher at KAIST.
 url: "https://yoonho-lee-ai4science.github.io"
 baseurl: ""
+timezone: Asia/Seoul   # "Last updated" 날짜를 한국 시간 기준으로
 
 markdown: kramdown
 kramdown:

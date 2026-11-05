@@ -30,7 +30,7 @@
   <main class="container">
     {{ content }}
   </main>
-  <footer>© <span id="year"></span> {{ site.title }}</footer>
+  <footer>© <span id="year"></span> {{ site.title }} · Last updated {{ site.time | date: "%Y.%m.%d" }}</footer>
   <script src="/js/main.js"></script>
 </body>
 </html>
