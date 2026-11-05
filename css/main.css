@@ -89,6 +89,7 @@ h2 {
   transition: background .2s, color .2s;
 }
 .social a:hover { background: var(--accent); color: #fff; text-decoration: none; }
+.social .icon { width: 1.25rem; height: 1.25rem; display: block; }
 .meta { font-family: var(--font-ui); font-size: 0.85rem; color: var(--muted); }
 .meta i { margin-right: 4px; }
 
