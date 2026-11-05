@@ -75,7 +75,7 @@
           <div class="paper-body">
             <div class="paper-title">${esc(p.title)}</div>
             <div class="paper-authors">${boldMe(p.authors)}</div>
-            <div class="paper-venue"><span class="venue">${esc(p.venue)}</span>${badges}</div>
+            <div class="paper-venue">${[].concat(p.venue).map((v) => `<span class="venue">${esc(v)}</span>`).join("")}${badges}</div>
             ${p.tldr ? `<div class="paper-tldr">${esc(p.tldr)}</div>` : ""}
             ${links ? `<div class="paper-links">${links}</div>` : ""}
           </div>
