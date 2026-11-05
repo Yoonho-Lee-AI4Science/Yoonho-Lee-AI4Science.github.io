@@ -12,7 +12,6 @@
  *    venue    (필수) 학회 이름. 여러 곳이면 배열: ["NeurIPS 2026", "GenAI4Health@NeurIPS 2026"]
  *    year     (필수) 정렬용 연도
  *    topics   필터용 태그 배열, 예: ["vcell", "graph"]  (TOPICS의 key)
- *    workshop true면 "Workshop" 태그 표시
  *    image    썸네일 경로 (img/papers/xxx.png). 없으면 생략
  *    badges   강조 배지 배열, 예: ["Oral"], ["Spotlight"]
  *    links    { paper, arxiv, code, project, slides, poster, bibtex } 중 원하는 것만
@@ -92,7 +91,6 @@ const PUBLICATIONS = [
     venue: "MLGenX@ICLR 2025",
     year: 2025,
     topics: ["vcell"],
-    workshop: true,
   },
   {
     title: "Subgraph Federated Learning for Local Generalization",
@@ -100,7 +98,6 @@ const PUBLICATIONS = [
     venue: "FedKDD@KDD 2024",
     year: 2024,
     topics: ["graph"],
-    workshop: true,
     badges: ["Best Paper Award"],
   },
 ];
