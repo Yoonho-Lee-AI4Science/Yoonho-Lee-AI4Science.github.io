@@ -71,12 +71,20 @@ h2 {
 .theme-toggle:hover { color: var(--accent); }
 
 /* ============ About ============ */
-.about { display: flex; gap: 36px; align-items: flex-start; flex-direction: row-reverse; }
+/* 이름·직함은 위에 전체 폭, 그 아래에서 소개글과 사진의 윗선이 맞춰짐 */
+.about {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 36px;
+  grid-template-areas: "head head" "text photo";
+  align-items: start;
+}
+.about-head { grid-area: head; }
+.about-text { grid-area: text; min-width: 0; }
+.about-text > p:first-child { margin-top: 0; }
 .portrait {
-  width: 190px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; flex-shrink: 0;
+  grid-area: photo;
+  width: 190px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
-.about-text { flex: 1; min-width: 0; }
 .about h1 { font-size: 2.1rem; margin: 0 0 4px; }
 .name-ko { font-size: 1.1rem; font-weight: 500; color: var(--muted); margin-left: 6px; }
 .tagline { margin: 0 0 16px; font-family: var(--font-ui); color: var(--muted); font-size: 0.98rem; }
@@ -189,8 +197,8 @@ footer {
 /* ============ Responsive ============ */
 @media (max-width: 680px) {
   body { font-size: 16px; }
-  .about { flex-direction: column; align-items: center; text-align: left; gap: 20px; }
-  .portrait { width: 150px; }
+  .about { grid-template-columns: minmax(0, 1fr); grid-template-areas: "photo" "head" "text"; row-gap: 16px; }
+  .portrait { width: 150px; justify-self: center; }
   .paper { flex-direction: column; gap: 10px; }
   .thumb { width: 100%; max-width: 360px; }
   .topnav ul { font-size: 0.85rem; gap: 2px 12px; }
