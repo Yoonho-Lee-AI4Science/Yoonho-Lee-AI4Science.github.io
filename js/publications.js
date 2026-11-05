@@ -11,10 +11,10 @@
  *                    공동 1저자는 "*", 교신저자는 "†"를 이름 뒤에 붙이세요.
  *    venue    (필수) 학회/저널 이름, 예: "NeurIPS 2025"
  *    year     (필수) 정렬용 연도
- *    topics   필터용 태그 배열, 예: ["ai4sci"]
+ *    topics   필터용 태그 배열, 예: ["vcell", "graph"]  (TOPICS의 key)
+ *    workshop true면 "Workshop" 태그 표시
  *    image    썸네일 경로 (img/papers/xxx.png). 없으면 생략
  *    badges   강조 배지 배열, 예: ["Oral"], ["Spotlight"]
- *    selected true면 "Selected" 필터에 표시
  *    links    { paper, arxiv, code, project, slides, poster, bibtex } 중 원하는 것만
  *    tldr     한 줄 요약 (선택)
  */
@@ -22,11 +22,12 @@
 const ME = ["Yoonho Lee"]; // 굵게 표시할 본인 이름
 
 const TOPICS = [
-  { key: "all",      label: "All" },
-  { key: "selected", label: "Selected" },
-  { key: "ai4sci",   label: "AI for Science" },
-  { key: "graph",    label: "Graph Learning" },
-  { key: "workshop", label: "Workshops" },
+  { key: "all",    label: "All" },
+  { key: "vcell",  label: "Virtual Cell" },
+  { key: "nad",    label: "Nucleic Acid Design" },
+  { key: "dds",    label: "Drug Delivery System" },
+  { key: "graph",  label: "Graphs & Geometric Deep Learning" },
+  { key: "etc",    label: "AI4Science (ETC)" },
 ];
 
 const PUBLICATIONS = [
@@ -36,8 +37,7 @@ const PUBLICATIONS = [
     authors: "Yoonho Lee, Yunhak Oh, Hoyoung Choi, Chanyoung Park",
     venue: "NeurIPS 2026",
     year: 2026,
-    topics: ["ai4sci"],
-    selected: true,
+    topics: ["dds"],
     links: { paper: "https://doi.org/10.1101/2026.07.08.737142" },
   },
   {
@@ -45,8 +45,7 @@ const PUBLICATIONS = [
     authors: "Yunhak Oh, Yoonho Lee, Junseok Lee, Namkyeong Lee, Sangyeon Hwang, Yinhua Piao, Hyomin Kim, Seonghwan Kim, Jaechang Lim, Wooyoun Kim, Sungsoo Ahn, Chanyoung Park",
     venue: "NeurIPS 2026",
     year: 2026,
-    topics: ["ai4sci"],
-    selected: true,
+    topics: ["vcell"],
     links: { arxiv: "https://arxiv.org/abs/2609.38840" },
   },
   {
@@ -54,8 +53,7 @@ const PUBLICATIONS = [
     authors: "Yoonho Lee, Junseok Lee, Sangwoo Seo, Sungwon Kim, Yeongmin Kim, Chanyoung Park",
     venue: "NeurIPS 2025",
     year: 2025,
-    topics: ["graph", "ai4sci"],
-    selected: true,
+    topics: ["graph", "etc"],
   },
   {
     title: "Target Circuit Matching in Large-Scale Netlists using GNN-Based Region Prediction",
@@ -71,7 +69,6 @@ const PUBLICATIONS = [
     year: 2025,
     topics: ["graph"],
     badges: ["Oral · top 1.8%"],
-    selected: true,
   },
   {
     title: "Self-Explainable Temporal Graph Networks based on Graph Information Bottleneck",
@@ -94,21 +91,24 @@ const PUBLICATIONS = [
     authors: "Yunhak Oh, Yoonho Lee, Junseok Lee, Namkyeong Lee, Sangyeon Hwang, Yinhua Piao, Hyomin Kim, Seonghwan Kim, Jaechang Lim, Wooyoun Kim, Sungsoo Ahn, Chanyoung Park",
     venue: "NeurIPS 2026 Workshop on GenAI for Health",
     year: 2026,
-    topics: ["workshop"],
+    topics: ["vcell"],
+    workshop: true,
   },
   {
     title: "Capturing Functional Context of Genetic Pathways through Hyperedge Disentanglement",
     authors: "Yoonho Lee, Junseok Lee, Sangwoo Seo, Sungwon Kim, Yeongmin Kim, Chanyoung Park",
     venue: "ICLR 2025 Workshop on Machine Learning for Genomics Explorations (MLGenX)",
     year: 2025,
-    topics: ["workshop"],
+    topics: ["graph", "etc"],
+    workshop: true,
   },
   {
     title: "Subgraph Federated Learning for Local Generalization",
     authors: "Sungwon Kim, Yoonho Lee, Yunhak Oh, Namkyeong Lee, Sukwon Yun, Junseok Lee, Sein Kim, Carl Yang, Chanyoung Park",
     venue: "KDD 2024 Workshop on Federated Learning for Data Mining and Graph Analytics (FedKDD)",
     year: 2024,
-    topics: ["workshop"],
+    topics: ["graph"],
+    workshop: true,
     badges: ["Best Paper Award"],
   },
 ];
