@@ -53,14 +53,14 @@ const PUBLICATIONS = [
     authors: "Yoonho Lee, Junseok Lee, Sangwoo Seo, Sungwon Kim, Yeongmin Kim, Chanyoung Park",
     venue: "NeurIPS 2025",
     year: 2025,
-    topics: ["graph", "etc"],
+    topics: ["graph"],
   },
   {
     title: "Target Circuit Matching in Large-Scale Netlists using GNN-Based Region Prediction",
     authors: "Sangwoo Seo, Jimin Seo, Yoonho Lee, Donghyeon Kim, Hyejin Shin, Banghyun Sung, Chanyoung Park",
     venue: "ICCAD 2025",
     year: 2025,
-    topics: ["graph"],
+    topics: ["etc"],
   },
   {
     title: "Subgraph Federated Learning for Local Generalization",
@@ -99,7 +99,7 @@ const PUBLICATIONS = [
     authors: "Yoonho Lee, Junseok Lee, Sangwoo Seo, Sungwon Kim, Yeongmin Kim, Chanyoung Park",
     venue: "ICLR 2025 Workshop on Machine Learning for Genomics Explorations (MLGenX)",
     year: 2025,
-    topics: ["graph", "etc"],
+    topics: ["vcell"],
     workshop: true,
   },
   {
