@@ -38,7 +38,7 @@ const PUBLICATIONS = [
     venue: "NeurIPS 2026",
     year: 2026,
     topics: ["dds"],
-    links: { paper: "https://doi.org/10.1101/2026.07.08.737142" },
+    links: { paper: "https://www.biorxiv.org/content/10.64898/2026.07.08.737142v2.abstract", code: "https://github.com/Yoonho-Lee-AI4Science/STRATA" },
   },
   {
     title: "scTrilemma: Balancing Identity, Invariance, and Fidelity in Single-Cell Representation Learning",
