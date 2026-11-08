@@ -70,6 +70,7 @@ const PUBLICATIONS = [
     venue: "ICLR 2025",
     year: 2025,
     topics: ["graph"],
+    image: "img/papers/fedlog-iclr.png",
     badges: ["Oral · top 1.8%"],
     links: { paper: "https://arxiv.org/abs/2503.03995", code: "https://github.com/sung-won-kim/FedLoG" },
   },
