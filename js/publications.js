@@ -103,6 +103,6 @@ const PUBLICATIONS = [
     year: 2024,
     topics: ["graph"],
     badges: ["Best Paper Award"],
-    links: { paper: "https://arxiv.org/abs/2503.03995", code: "https://github.com/sung-won-kim/FedLoG" },
+    links: { paper: "https://openreview.net/forum?id=dCrqPTrF7y", code: "https://github.com/sung-won-kim/FedLoG" },
   },
 ];
