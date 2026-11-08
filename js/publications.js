@@ -95,6 +95,7 @@ const PUBLICATIONS = [
     venue: "MLGenX@ICLR 2025",
     year: 2025,
     topics: ["vcell"],
+    links: { paper: "https://openreview.net/forum?id=uZ6B53QSHZ&noteId=xvauqIrm7b", code: "https://github.com/Yoonho-Lee-AI4Science/Natural-HNN" },
   },
   {
     title: "Subgraph Federated Learning for Local Generalization",
