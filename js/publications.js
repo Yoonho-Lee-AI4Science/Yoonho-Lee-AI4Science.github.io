@@ -87,6 +87,7 @@ const PUBLICATIONS = [
     venue: "MMM 2021",
     year: 2021,
     topics: [],
+    links: { paper: "https://dl.acm.org/doi/10.1007/978-3-030-67835-7_39" },
   },
 
   // ======================= Workshops =======================
