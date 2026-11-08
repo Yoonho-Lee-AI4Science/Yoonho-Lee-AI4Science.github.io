@@ -98,6 +98,7 @@ const PUBLICATIONS = [
     venue: "MLGenX@ICLR 2025",
     year: 2025,
     topics: ["vcell"],
+    image: "img/papers/mlgenx-pathways.png",
     links: { paper: "https://openreview.net/forum?id=uZ6B53QSHZ&noteId=xvauqIrm7b", code: "https://github.com/Yoonho-Lee-AI4Science/Natural-HNN" },
   },
   {
