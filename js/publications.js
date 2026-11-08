@@ -71,6 +71,7 @@ const PUBLICATIONS = [
     year: 2025,
     topics: ["graph"],
     badges: ["Oral · top 1.8%"],
+    links: { paper: "https://arxiv.org/abs/2503.03995", code: "https://github.com/sung-won-kim/FedLoG" },
   },
   {
     title: "Self-Explainable Temporal Graph Networks based on Graph Information Bottleneck",
@@ -102,5 +103,6 @@ const PUBLICATIONS = [
     year: 2024,
     topics: ["graph"],
     badges: ["Best Paper Award"],
+    links: { paper: "https://arxiv.org/abs/2503.03995", code: "https://github.com/sung-won-kim/FedLoG" },
   },
 ];
