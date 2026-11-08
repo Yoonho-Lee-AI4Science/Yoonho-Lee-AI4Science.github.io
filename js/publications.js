@@ -79,6 +79,7 @@ const PUBLICATIONS = [
     venue: "KDD 2024",
     year: 2024,
     topics: ["graph"],
+    links: { paper: "https://arxiv.org/abs/2406.13214", code: "https://github.com/sang-woo-seo/TGIB" },
   },
   {
     title: "IVIST: Interactive Video Search Tool in VBS 2021",
