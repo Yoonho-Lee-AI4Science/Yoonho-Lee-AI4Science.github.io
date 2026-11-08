@@ -46,6 +46,7 @@ const PUBLICATIONS = [
     venue: ["NeurIPS 2026", "GenAI4Health@NeurIPS 2026"],
     year: 2026,
     topics: ["vcell"],
+    image: "img/papers/sctrilemma.png",
     links: { paper: "https://arxiv.org/abs/2609.38840", code: "https://github.com/yunhak0/scTrilemma" },
   },
   {
