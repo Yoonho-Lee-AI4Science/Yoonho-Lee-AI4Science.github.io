@@ -38,6 +38,7 @@ const PUBLICATIONS = [
     venue: "NeurIPS 2026",
     year: 2026,
     topics: ["dds"],
+    image: "img/papers/strata.png",
     links: { paper: "https://www.biorxiv.org/content/10.64898/2026.07.08.737142v2.abstract", code: "https://github.com/Yoonho-Lee-AI4Science/STRATA" },
   },
   {
