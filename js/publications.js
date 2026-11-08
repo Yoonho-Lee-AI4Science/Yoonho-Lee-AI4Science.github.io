@@ -62,6 +62,7 @@ const PUBLICATIONS = [
     venue: "ICCAD 2025",
     year: 2025,
     topics: ["etc"],
+    image: "img/papers/circuit-matching.png",
     links: { paper: "https://arxiv.org/abs/2507.19518", code: "https://github.com/sang-woo-seo/Circuit-matching-GNN" },
   },
   {
