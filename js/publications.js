@@ -106,6 +106,7 @@ const PUBLICATIONS = [
     venue: "FedKDD@KDD 2024",
     year: 2024,
     topics: ["graph"],
+    image: "img/papers/fedlog.png",
     badges: ["Best Paper Award"],
     links: { paper: "https://openreview.net/forum?id=dCrqPTrF7y", code: "https://github.com/sung-won-kim/FedLoG" },
   },
