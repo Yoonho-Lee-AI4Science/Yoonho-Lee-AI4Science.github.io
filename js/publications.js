@@ -54,6 +54,7 @@ const PUBLICATIONS = [
     venue: "NeurIPS 2025",
     year: 2025,
     topics: ["graph"],
+    image: "img/papers/natural-hnn.png",
     links: { paper: "https://arxiv.org/abs/2510.16289", code: "https://github.com/Yoonho-Lee-AI4Science/Natural-HNN" },
   },
   {
