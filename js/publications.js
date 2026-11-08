@@ -54,6 +54,7 @@ const PUBLICATIONS = [
     venue: "NeurIPS 2025",
     year: 2025,
     topics: ["graph"],
+    links: { paper: "https://arxiv.org/abs/2510.16289", code: "https://github.com/Yoonho-Lee-AI4Science/Natural-HNN" },
   },
   {
     title: "Target Circuit Matching in Large-Scale Netlists using GNN-Based Region Prediction",
