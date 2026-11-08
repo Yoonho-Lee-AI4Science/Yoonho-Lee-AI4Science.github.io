@@ -79,6 +79,7 @@ const PUBLICATIONS = [
     venue: "KDD 2024",
     year: 2024,
     topics: ["graph"],
+    image: "img/papers/tgib.png",
     links: { paper: "https://arxiv.org/abs/2406.13214", code: "https://github.com/sang-woo-seo/TGIB" },
   },
   {

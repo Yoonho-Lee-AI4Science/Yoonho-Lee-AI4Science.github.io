@@ -141,7 +141,9 @@ h2 {
   border-radius: 8px; overflow: hidden; background: var(--bg-soft);
   border: 1px solid var(--line);
 }
-.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.thumb:not(.empty) { background: #fff; }   /* 논문 그림은 보통 흰 배경 */
+/* 비율이 달라도 잘리지 않고 그림 전체가 보이도록 (남는 부분은 흰 여백) */
+.thumb img { width: 100%; height: 100%; object-fit: contain; display: block; padding: 4px; box-sizing: border-box; }
 .thumb.empty { background: linear-gradient(135deg, var(--accent-soft), var(--bg-soft)); }
 .paper-body { flex: 1; min-width: 0; }
 .paper-title { font-family: var(--font-ui); font-weight: 600; font-size: 1.02rem; line-height: 1.4; }
