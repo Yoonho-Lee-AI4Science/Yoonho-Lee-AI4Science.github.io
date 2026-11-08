@@ -27,6 +27,7 @@ const TOPICS = [
   { key: "dds",    label: "Drug Delivery System" },
   { key: "graph",  label: "Graphs & Geometric Deep Learning" },
   { key: "etc",    label: "AI4Science (ETC)" },
+  { key: "preprint", label: "Preprints" },  // 아직 학회/저널 미게재 논문: topics에 "preprint" 추가
 ];
 
 const PUBLICATIONS = [
