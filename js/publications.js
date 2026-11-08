@@ -46,7 +46,7 @@ const PUBLICATIONS = [
     venue: ["NeurIPS 2026", "GenAI4Health@NeurIPS 2026"],
     year: 2026,
     topics: ["vcell"],
-    links: { arxiv: "https://arxiv.org/abs/2609.38840" },
+    links: { paper: "https://arxiv.org/abs/2609.38840", code: "https://github.com/yunhak0/scTrilemma" },
   },
   {
     title: "Disentangling Hyperedges through the Lens of Category Theory",
